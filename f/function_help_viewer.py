@@ -21,7 +21,7 @@ def hhelp(object):
     @app.route('/')
     def index():
         return render_template_string('''
-            <h1>PyArrow Table Help Documentation</h1>
+            <h1>python object help documentation</h1>
             <ul>
             {% for name, info in help_info.items() %}
                 <li><a href="/help/{{ name }}">{{ name }}</a></li>
